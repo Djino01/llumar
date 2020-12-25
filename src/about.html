@@ -1,0 +1,111 @@
+@@include('inc/doc-start.html', {
+	"title": "О компании"
+})
+
+@@include('inc/page-header.html', {
+  color: 'header--light'
+})
+
+<div class="main">
+
+	<div class="main-top">
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li>О компании</li>
+				</ul>
+			</div>
+			<div class="main__tabs flex">
+				<div class="main__tab active">о нас</div>
+				<div class="main__tab">Семинары</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about">
+		<div class="wrapper">
+			<div class="about__title h2">О нас</div>
+			<div class="about__content">
+				<div class="about__row flex">
+					<div class="about__box">
+						<div class="about__caption">Pro Plenki</div>
+						<div class="about__text">
+							<p>Официальный дистрибьютор Llumar в России.</p>
+							<p>Опыт работы более 7 лет , сертифицированная студия по установке пленки, нам доверяют дилерские центры Volkswagen Audi Porsche Toyota Lexus Kia Mercedes-benz Bmw.</p>
+							<p>Можем осуществить выезд к заказчику</p>
+							<p>Работаем только оригинальными пленками такими как: SunTek , SunTek Ultra, 3M Scotchgard, Тонировочная пленка LLUMAR SUNTEK.</p>
+							<p>2 опытные бригады мастеров с опытом более 5 лет</p>
+						</div>
+					</div>
+					<div class="about__img img-cover">
+						<img src="img/about/img-1.jpg" alt="">
+					</div>
+				</div>
+				<div class="about__row flex">
+					<div class="about__box">
+						<div class="about__caption">LLumar</div>
+						<div class="about__text">
+							<p>Бренд LLumar был основан в США в 1977 году, а в 2001 году вышел на международные рынки. Наш ассортимент включает широкий ряд тонировочных автомобильных пленок, архитектурных оконных пленок для жилых и коммерческих зданий, декоративных пленок, защитных пленок, а также пленок для защиты поверхностей от граффити.</p>
+							<p>Любое место, где используется стекло, — это возможность улучшения при помощи оконных пленок LLumar. Неважно, где их использовать: будь то автомобильное или архитектурное стекло, высококачественные оконные пленки повышают энергоэффективность, комфорт, безопасность и эстетику.</p>
+							<p>Стремление компании LLumar к качеству — вот что движет нами каждый день. Это то, на что вы можете рассчитывать и что вы можете наблюдать в каждом изготовленном нами продукте.</p>
+						</div>
+					</div>
+					<div class="about__img img-cover">
+						<img src="img/about/img-2.jpg" alt="">
+					</div>
+				</div>
+				<div class="about__row flex">
+					<div class="about__box">
+						<div class="about__caption">Eastman Chemical</div>
+						<div class="about__text">
+							<p>Оконная пленка LLumar производится компанией Eastman Chemical, международной химической компанией, основанной Джорджем Истманом — основателем компании Eastman Kodak —в 1920 году.</p>
+							<p>Компания занимается производством широкого спектра материалов и химикатов, которые входят в состав различных бытовых и промышленных продуктов, используемых людьми в повседневной жизни.</p>
+							<p>Компания Eastman располагает одной из самых крупных и современных площадок в мире по производству пленок для окон и пленок со специальным покрытием, обслуживая клиентов в более чем 100 странах по всему миру.</p>
+						</div>
+					</div>
+					<div class="about__img img-cover">
+						<img src="img/about/img-3.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="order">
+	<div class="wrapper">
+		<div class="order__title h3">Оставить заявку</div>
+		<form action="#" class="order__form">
+			<label class="order__label">
+				<input type="text" class="order__field field" placeholder="Ваше имя">
+			</label>
+			<label class="order__label">
+				<input type="text" class="order__field field phone-mask" placeholder="Телефон*">
+			</label>
+			<label class="order__label order__label_big">
+				<textarea class="order__field field" placeholder="Ваше сообщение"></textarea>
+				<div class="order__label-desc">Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</div>
+			</label>
+			<div class="order__bottom flex">
+				<div class="order__number flex">
+					<div class="order__number-item">
+						<img src="img/order/number.jpg" alt="">
+					</div>
+					<label class="order__number-label">
+						<input type="text" class="order__field field" placeholder="Символы с картинки*">
+					</label>
+				</div>
+				<button class="order__btn btn btn_dark">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div class="order__img img-contain">
+		<img src="img/order/bg.svg" alt="">
+	</div>
+</div>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

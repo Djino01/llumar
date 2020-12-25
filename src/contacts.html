@@ -1,0 +1,139 @@
+@@include('inc/doc-start.html', {
+	"title": "Контакты"
+})
+
+@@include('inc/page-header.html', {
+  color: 'header--light'
+})
+
+<div class="main">
+
+	<div class="main-top">
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="educational-center">
+		<div class="wrapper">
+			<div class="educational-center__title h2">Контакты</div>
+			<div class="educational-center__content">
+				<div class="educational-center__box flex">
+					<div class="educational-center__left">
+						<div class="educational-center__box-title">Офис в Екатеринбурге</div>
+						<div class="educational-center__box-subtitle">Мы ищем партнеров по реализации и установке плёнки LLumar. </div>
+						<div class="educational-center__items">
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/addres.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<div class="educational-center__addres">Екатеринбург, ул. Розы Люксембург, 32</div>
+								</div>
+							</div>
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/phone.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<a href="tel:8 (800) 555-50-27" class="educational-center__tel">8 (800) 555-50-27</a>
+								</div>
+							</div>
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/mail.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<a href="mailto:llumar@llumar.ru" class="educational-center__mail">llumar@llumar.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="educational-center__right img-cover">
+						<div id="map-1"></div>
+					</div>
+				</div>
+				<div class="educational-center__box flex">
+					<div class="educational-center__left">
+						<div class="educational-center__box-title">Офис в Москве</div>
+						<div class="educational-center__box-subtitle">Мы ищем партнеров по реализации и установке плёнки LLumar. </div>
+						<div class="educational-center__items">
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/addres.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<div class="educational-center__addres">Москва, ул. Угрешская, 
+										2 строение 146, офис 106, 106а, Угрешская (МЦК)</div>
+								</div>
+							</div>
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/phone.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<a href="tel:8 (800) 555-50-27" class="educational-center__tel">8 (800) 555-50-27</a>
+								</div>
+							</div>
+							<div class="educational-center__item">
+								<div class="educational-center__icon">
+									<img src="img/educational-center/mail.svg" alt="">
+								</div>
+								<div class="educational-center__item-box">
+									<a href="mailto:llumar@llumar.ru" class="educational-center__mail">llumar@llumar.ru</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="educational-center__right img-cover">
+						<div id="map-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div class="order">
+	<div class="wrapper">
+		<div class="order__title h3">Оставить заявку</div>
+		<form action="#" class="order__form">
+			<label class="order__label">
+				<input type="text" class="order__field field" placeholder="Ваше имя">
+			</label>
+			<label class="order__label">
+				<input type="text" class="order__field field phone-mask" placeholder="Телефон*">
+			</label>
+			<label class="order__label order__label_big">
+				<textarea class="order__field field" placeholder="Ваше сообщение"></textarea>
+				<div class="order__label-desc">Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</div>
+			</label>
+			<div class="order__bottom flex">
+				<div class="order__number flex">
+					<div class="order__number-item">
+						<img src="img/order/number.jpg" alt="">
+					</div>
+					<label class="order__number-label">
+						<input type="text" class="order__field field" placeholder="Символы с картинки*">
+					</label>
+				</div>
+				<button class="order__btn btn btn_dark">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div class="order__img img-contain">
+		<img src="img/order/bg.svg" alt="">
+	</div>
+</div>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO919fhlGI0EyNQxGLXpGArTgWayQEMno&callback=initMap"></script>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

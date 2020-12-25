@@ -1,0 +1,256 @@
+.main-info {
+	margin-top: 80px;
+	margin-bottom: 107px;
+	&__tabs {
+		margin: 0px -40px 39px;
+	}
+	&__tab,
+	&__top {
+		margin: 0px 40px;
+		cursor: pointer;
+		&-icon {
+			width: 26px;
+			height: 26px;
+			opacity: 0.3;
+			transition: all 0.3s;
+		}
+		&-caption {
+			font-size: 17px;
+			line-height: 150%;
+			letter-spacing: -0.01em;
+			text-transform: uppercase;
+			color: #a5a1a1;
+			margin-left: 15px;
+		}
+		&.active,
+		&:hover {
+			.main-info__tab-icon {
+				opacity: 1;
+				transition: all 0.3s;
+			}
+			.main-info__tab-caption {
+				color: #000000;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__top {
+		display: none;
+	}
+	&__portfolio {
+		padding-top: 3px;
+		&-row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -3px;
+		}
+		&-coll {
+			width: 25.132%;
+			height: 270px;
+			margin: 3px;
+			border-radius: 3px;
+			overflow: hidden;
+			img {
+				transition: all 0.3s;
+			}
+			&_small {
+				width: 16.58%;
+			}
+			&_big {
+				width: 39.617%;
+			}
+			&:hover {
+				img {
+					transform: scale(1.1);
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__box {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(50px);
+		transition: all 0s;
+		&.active {
+			position: relative;
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0px);
+			transition: all 0.3s;
+		}
+	}
+	&__article {
+		padding-top: 30px;
+		&-box {
+			overflow: hidden;
+			position: relative;
+			z-index: 10;
+			transition: all 0.3s;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 160px;
+				left: 0px;
+				bottom: 0px;
+				background: linear-gradient(180deg, rgba(255, 255, 255, 0) -120%, #ffffff 75.83%);
+				opacity: 1;
+				transition: all 0.3s;
+			}
+			&.active {
+				&:after {
+					opacity: 0;
+					transition: all 0.3s;
+				}
+			}
+		}
+		&-btn {
+			color: #000;
+			border-color: #c4c4c4;
+			margin-top: 40px;
+			width: 262px;
+			img {
+				transform: rotate(-90deg);
+				margin-left: 7px;
+				transition: all 0.3s;
+			}
+			&:hover {
+				border-color: #000;
+			}
+			&.active {
+				img {
+					transform: rotate(90deg);
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1170px) {
+	.main-info {
+		&__portfolio {
+			&-coll {
+				width: 25.5%;
+				height: 230px;
+				&_small {
+					width: 16%;
+				}
+				&_big {
+					width: 40%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.main-info {
+		&__portfolio {
+			&-coll {
+				width: 24.6%;
+				height: 165px;
+				&_small {
+					width: 16%;
+				}
+				&_big {
+					width: 40%;
+				}
+			}
+		}
+		&__tab {
+			margin: 0 20px;
+		}
+		&__article {
+			padding-top: 10px;
+			&-btn {
+				margin-top: 30px;
+				width: 230px;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.main-info {
+		margin-top: 34px;
+		margin-bottom: 22px;
+		&__portfolio {
+			&-scroll {
+				height: 220px;
+				overflow-y: auto;
+			}
+			&-row {
+				min-width: 466px;
+			}
+			&-coll {
+				width: 154px;
+				height: 107px;
+				margin: 1.5px;
+				&_small {
+					width: 73px;
+				}
+				&_big {
+					width: 154px;
+				}
+			}
+		}
+		&__tabs {
+			display: none;
+		}
+		&__box {
+			& + & {
+				margin-top: -1px;
+			}
+			padding: 18px 0px 22px;
+			border-top: 1px solid #e0dede;
+			border-bottom: 1px solid #e0dede;
+			position: relative;
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0);
+			transition: all 0.3s;
+			&.active {
+				.main-info__top {
+					&:after {
+						transform: rotate(180deg);
+						transition: all 0.3s;
+					}
+				}
+			}
+		}
+		&__top {
+			display: flex;
+			justify-content: flex-start;
+			margin: 0px;
+			position: relative;
+			z-index: 10;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 8px;
+				height: 5px;
+				background-image: url(../img/icon/sidebar-arrow.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				top: calc(50% - 2.5px);
+				right: 0;
+				transition: all 0.3s;
+			}
+		}
+		&__block {
+			margin-top: 18px;
+			display: none;
+		}
+		&__article {
+			padding-top: 0px;
+			&-box {
+				&:after {
+					display: none;
+				}
+			}
+			&-btn {
+				display: none;
+			}
+		}
+	}
+}

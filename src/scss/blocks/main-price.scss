@@ -1,0 +1,274 @@
+.main-price {
+	padding-top: 88px;
+	padding-bottom: 19px;
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	&__table {
+		table {
+			width: 100%;
+			thead {
+				width: 100%;
+				tr {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					background-color: #000000;
+					th {
+						width: 190px;
+						font-weight: 400;
+						font-size: 17px;
+						line-height: 150%;
+						letter-spacing: -0.01em;
+						text-align: left;
+						color: #ffffff;
+						padding: 10px 27px;
+						&:first-child {
+							width: 380px;
+						}
+					}
+				}
+			}
+			tbody {
+				width: 100%;
+				tr {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					&:nth-child(2n) {
+						background-color: #f3f3f2;
+					}
+					td {
+						width: 190px;
+						font-weight: 400;
+						font-size: 17px;
+						line-height: 150%;
+						letter-spacing: -0.01em;
+						text-align: left;
+						color: #797878;
+						padding: 13.5px 27px;
+						&:first-child {
+							width: 380px;
+							font-weight: 500;
+							color: #000000;
+						}
+					}
+				}
+			}
+		}
+		&_tinted {
+			table {
+				thead {
+					tr {
+						th {
+							width: 190px;
+							padding: 10px 27px;
+							&:first-child {
+								width: 585px;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							width: 190px;
+							padding: 13.5px 27px;
+							&:first-child {
+								width: 585px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1170px) {
+	.main-price {
+		padding-top: 80px;
+		padding-bottom: 10px;
+		&__title {
+			margin-bottom: 50px;
+		}
+		&__table {
+			table {
+				thead {
+					tr {
+						th {
+							width: 160px;
+							font-size: 16px;
+							padding: 10px 27px;
+							&:first-child {
+								width: 295px;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							width: 160px;
+							font-size: 16px;
+							padding: 13.5px 27px;
+							&:first-child {
+								width: 295px;
+							}
+						}
+					}
+				}
+			}
+			&_tinted {
+				table {
+					thead {
+						tr {
+							th {
+								width: 160px;
+								&:first-child {
+									width: 485px;
+								}
+							}
+						}
+					}
+					tbody {
+						tr {
+							td {
+								width: 160px;
+								&:first-child {
+									width: 485px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.main-price {
+		padding-top: 80px;
+		padding-bottom: 10px;
+		&__title {
+			margin-bottom: 35px;
+		}
+		&__table {
+			table {
+				thead {
+					tr {
+						th {
+							width: 120px;
+							font-size: 14px;
+							padding: 10px 15px;
+							&:first-child {
+								width: 230px;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							width: 120px;
+							font-size: 14px;
+							padding: 13.5px 15px;
+							&:first-child {
+								width: 230px;
+							}
+						}
+					}
+				}
+			}
+			&_tinted {
+				table {
+					thead {
+						tr {
+							th {
+								&:first-child {
+									width: 355px;
+								}
+								br {
+									display: none;
+								}
+							}
+						}
+					}
+					tbody {
+						tr {
+							td {
+								&:first-child {
+									width: 355px;
+								}
+								br {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.main-price {
+		padding-top: 46px;
+		padding-bottom: 0px;
+		&__title {
+			margin-bottom: 22px;
+		}
+		&__table {
+			overflow-y: auto;
+			table {
+				width: 650px;
+				thead {
+					tr {
+						th {
+							width: 120px;
+							font-size: 14px;
+							padding: 8px 17px;
+							&:first-child {
+								width: 165px;
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							width: 120px;
+							font-size: 14px;
+							padding: 11px 17px;
+							&:first-child {
+								width: 165px;
+							}
+						}
+					}
+				}
+			}
+			&_tinted {
+				table {
+					thead {
+						tr {
+							th {
+								&:first-child {
+									width: 285px;
+								}
+							}
+						}
+					}
+					tbody {
+						tr {
+							td {
+								&:first-child {
+									width: 285px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

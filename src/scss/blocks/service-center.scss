@@ -1,0 +1,171 @@
+.service-center {
+	margin-top: 40px;
+	margin-bottom: 99px;
+	&__wrap {
+		align-items: flex-start;
+	}
+	&__left {
+		width: calc(100% - 200px);
+		max-width: 900px;
+	}
+	&__subtitle {
+		margin-top: 42px;
+		font-size: 17px;
+		line-height: 150%;
+		letter-spacing: -0.01em;
+		color: #797878;
+	}
+	&__logo {
+		width: 161px;
+		height: 161px;
+		margin-top: 24px;
+		border-radius: 3px;
+		overflow: hidden;
+		&_mobile {
+			display: none;
+		}
+	}
+	&__row {
+		align-items: flex-start;
+		margin-top: 64px;
+		padding-right: 27px;
+	}
+	&__coll {
+		align-items: flex-start;
+	}
+	&__icon {
+		width: 47px;
+		margin-top: 3px;
+	}
+	&__box {
+		width: calc(100% - 36px);
+		a {
+			display: block;
+			&.service-center__desc {
+				color: #000;
+				transition: all 0.3s;
+				&:hover {
+					color: #797979;
+					transition: all 0.3s;
+				}
+				&_email {
+					color: #e50a0b;
+				}
+			}
+		}
+	}
+	&__desc {
+		font-size: 17px;
+		line-height: 150%;
+		letter-spacing: -0.01em;
+		color: #797979;
+		max-width: 218px;
+	}
+	&-map {
+		width: 100%;
+		height: 723px;
+	}
+}
+@media (max-width: 1170px) {
+	.service-center {
+		margin-top: 30px;
+		margin-bottom: 80px;
+		&-map {
+			height: 650px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.service-center {
+		margin-bottom: 0px;
+		&__left {
+			width: 100%;
+			max-width: 100%;
+		}
+		&__top {
+			display: flex;
+			align-items: center;
+		}
+		&__subtitle {
+			margin-top: 35px;
+			font-size: 16px;
+		}
+		&__logo {
+			display: none;
+			width: 100px;
+			height: 100px;
+			margin-top: 0px;
+			margin-right: 25px;
+			&_mobile {
+				display: block;
+			}
+		}
+		&__row {
+			margin-top: 50px;
+			padding-right: 0px;
+		}
+		&__coll {
+			width: 30%;
+		}
+		&__icon {
+			width: 40px;
+			margin-top: 3px;
+		}
+		&__box {
+			width: calc(100% - 36px);
+		}
+		&__desc {
+			font-size: 14px;
+			max-width: 200px;
+		}
+		&-map {
+			height: 600px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.service-center {
+		&__subtitle {
+			margin-top: 30px;
+			font-size: 14px;
+		}
+		&__logo {
+			width: 60px;
+			height: 60px;
+		}
+		&__row {
+			margin-top: 30px;
+			flex-wrap: wrap;
+		}
+		&__coll {
+			& + & {
+				margin-top: 20px;
+			}
+			width: 100%;
+		}
+		&__icon {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			margin-top: 3px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		&__box {
+			width: calc(100% - 30px);
+		}
+		&__desc {
+			font-size: 14px;
+			max-width: 100%;
+			br {
+				display: none;
+			}
+		}
+		&-map {
+			height: 450px;
+		}
+	}
+}

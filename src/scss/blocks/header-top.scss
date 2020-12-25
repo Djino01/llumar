@@ -1,0 +1,51 @@
+.header-top {
+	padding: 11px 0px 8px;
+	border-bottom: 1px solid #f5f5f5;
+	&__caption {
+		font-size: 15px;
+		line-height: 18px;
+		letter-spacing: -0.01em;
+		color: #979191;
+		margin-right: 22px;
+	}
+	&__link {
+		& + & {
+			margin-left: 14px;
+		}
+		svg {
+			& * {
+				transition: all 0.3s;
+			}
+		}
+		&:hover {
+			svg {
+				& * {
+					fill: #979191;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+	&__tel {
+		&-icon {
+			width: 12px;
+			height: 12px;
+			margin-right: 11px;
+			position: relative;
+			top: 2px;
+		}
+		&-caption {
+			font-size: 20px;
+			line-height: 24px;
+			letter-spacing: -0.01em;
+			color: #000000;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.header-top {
+		display: none;
+	}
+}
+@media (max-width: 760px) {
+}

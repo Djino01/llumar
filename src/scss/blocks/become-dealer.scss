@@ -1,0 +1,58 @@
+.become-dealer {
+	padding-top: 25px;
+	padding-bottom: 90px;
+	&__title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&__wrap {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__text {
+		p + p {
+			margin-top: 25px;
+		}
+		p {
+			font-size: 17px;
+			line-height: 155%;
+			letter-spacing: -0.01em;
+			color: #797878;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.become-dealer {
+		padding-bottom: 80px;
+		&__title {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		&__text {
+			max-width: 100%;
+			p + p {
+				margin-top: 10px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 150%;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.become-dealer {
+		padding-top: 14px;
+		padding-bottom: 60px;
+		&__title {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			max-width: 100%;
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}

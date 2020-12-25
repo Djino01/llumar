@@ -1,0 +1,60 @@
+@@include('inc/doc-start.html', {
+	"title": "Стать дилером"
+})
+
+@@include('inc/page-header.html', {
+  color: 'header--light'
+})
+
+<div class="become-dealer">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li>Установка</li>
+			</ul>
+		</div>
+		<div class="become-dealer__title h2">Стать дилером</div>
+		<div class="become-dealer__wrap flex">
+			<div class="become-dealer__text">
+				<p>Мы ищем партнеров по реализации и установке плёнки LLumar. Оптовые цены начинаются от пяти рулонов.<br> Для уточнения оптовых цен и условий сотрудничества обратитесь к нам по телефону 8 812 566 23 78 или напишите в форме обратной связи ниже. Cотрудничаем с компаниями по всей России, а также с компаниями в странах СНГ.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="order">
+	<div class="wrapper">
+		<div class="order__title h3">Оставить заявку</div>
+		<form action="#" class="order__form">
+			<label class="order__label">
+				<input type="text" class="order__field field" placeholder="Ваше имя">
+			</label>
+			<label class="order__label">
+				<input type="text" class="order__field field phone-mask" placeholder="Телефон*">
+			</label>
+			<label class="order__label order__label_big">
+				<textarea class="order__field field" placeholder="Ваше сообщение"></textarea>
+				<div class="order__label-desc">Отправляя форму, вы подтверждаете свое согласие на обработку персональных данных.</div>
+			</label>
+			<div class="order__bottom flex">
+				<div class="order__number flex">
+					<div class="order__number-item">
+						<img src="img/order/number.jpg" alt="">
+					</div>
+					<label class="order__number-label">
+						<input type="text" class="order__field field" placeholder="Символы с картинки*">
+					</label>
+				</div>
+				<button class="order__btn btn btn_dark">Отправить</button>
+			</div>
+		</form>
+	</div>
+	<div class="order__img img-contain">
+		<img src="img/order/bg.svg" alt="">
+	</div>
+</div>
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')

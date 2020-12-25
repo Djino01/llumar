@@ -1,0 +1,134 @@
+.article {
+	padding-top: 33px;
+	padding-bottom: 100px;
+	&__btn {
+		color: #000;
+		border-color: #c4c4c4;
+		margin-top: 56px;
+		width: 258px;
+		margin-bottom: 57px;
+		img {
+			margin-right: 7px;
+			transition: all 0.3s;
+		}
+		&:hover {
+			border-color: #000;
+			img {
+				transform: translateX(-5px);
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__img {
+		width: 100%;
+		border-radius: 3px;
+		overflow: hidden;
+		opacity: 0.8;
+		margin-bottom: 62px;
+	}
+	&__text {
+		letter-spacing: -0.01em;
+		color: #797878;
+		p {
+			font-size: 17px;
+			line-height: 155%;
+			strong {
+				font-weight: 600;
+			}
+		}
+		h2 {
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 38px;
+			letter-spacing: -0.01em;
+			color: #000000;
+			margin: 0px 0px 37px;
+		}
+		h3 {
+			font-size: 24px;
+			line-height: 155%;
+			color: #000;
+			font-weight: 500;
+			margin: 0px 0px 33px;
+		}
+		p + p {
+			margin-top: 27px;
+		}
+		p + h3 {
+			margin-top: 27px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.article {
+		padding-top: 30px;
+		padding-bottom: 80px;
+		&__btn {
+			margin-top: 25px;
+			width: 250px;
+			margin-bottom: 30px;
+		}
+		&__img {
+			margin-bottom: 45px;
+		}
+		&__text {
+			p {
+				font-size: 16px;
+			}
+			h2 {
+				font-size: 26px;
+				line-height: 150%;
+				margin: 0px 0px 25px;
+			}
+			h3 {
+				font-size: 20px;
+				margin: 0px 0px 20px;
+			}
+			p + p {
+				margin-top: 15px;
+			}
+			p + h3 {
+				margin-top: 15px;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.article {
+		padding-top: 25px;
+		padding-bottom: 60px;
+		&__btn {
+			margin-top: 25px;
+			width: 202px;
+			margin-bottom: 34px;
+			padding: 17px 10px;
+		}
+		&__img {
+			margin-bottom: 38px;
+			img {
+				min-height: 208px;
+			}
+		}
+		&__text {
+			padding-right: 5px;
+			p {
+				font-size: 14px;
+			}
+
+			h2 {
+				font-size: 22px;
+				margin: 0px 0px 20px;
+			}
+			h3 {
+				font-size: 18px;
+				margin: 0px 0px 20px;
+			}
+			p + p {
+				margin-top: 20px;
+			}
+			p + h3 {
+				margin-top: 22px;
+			}
+		}
+	}
+}

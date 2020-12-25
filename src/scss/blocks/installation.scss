@@ -1,0 +1,48 @@
+.installation {
+	margin-top: 40px;
+	margin-bottom: 74px;
+	&__title {
+		margin-bottom: 52px;
+	}
+	&__text {
+		font-size: 17px;
+		line-height: 150%;
+		letter-spacing: -0.01em;
+		color: #797878;
+	}
+	&-map {
+		width: 100%;
+		height: 723px;
+	}
+}
+@media (max-width: 1170px) {
+}
+@media (max-width: 1010px) {
+	.installation {
+		margin-top: 24px;
+		margin-bottom: 60px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__text {
+			font-size: 16px;
+		}
+		&-map {
+			height: 600px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.installation {
+		margin-bottom: 40px;
+		&__title {
+			margin-bottom: 15px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+		&-map {
+			height: 450px;
+		}
+	}
+}

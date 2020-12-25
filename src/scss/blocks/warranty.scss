@@ -1,0 +1,84 @@
+.warranty {
+	padding-top: 25px;
+	padding-bottom: 90px;
+	&__title {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	&__wrap {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	&__text {
+		max-width: 703px;
+		p + p {
+			margin-top: 25px;
+		}
+		p {
+			font-size: 17px;
+			line-height: 155%;
+			letter-spacing: -0.01em;
+			color: #797878;
+		}
+	}
+	&__img {
+		width: 360px;
+		height: 370px;
+		border-radius: 3px;
+		overflow: hidden;
+	}
+}
+@media (max-width: 1170px) {
+	.warranty {
+		&__text {
+			max-width: 590px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.warranty {
+		padding-bottom: 80px;
+		&__title {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+		&__text {
+			max-width: 100%;
+			margin-bottom: 30px;
+			p + p {
+				margin-top: 10px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 150%;
+			}
+		}
+		&__img {
+			width: 360px;
+			height: 370px;
+			border-radius: 3px;
+			overflow: hidden;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.warranty {
+		padding-top: 14px;
+		padding-bottom: 60px;
+		&__title {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		&__text {
+			max-width: 100%;
+			margin-bottom: 20px;
+			p {
+				font-size: 14px;
+			}
+		}
+		&__img {
+			width: 100%;
+			height: 250px;
+		}
+	}
+}

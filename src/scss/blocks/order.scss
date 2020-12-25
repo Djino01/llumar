@@ -1,0 +1,141 @@
+.order {
+	padding-top: 71px;
+	padding-bottom: 112px;
+	background: linear-gradient(229.02deg, #d32526 8.85%, #e1510b 96.85%);
+	position: relative;
+	z-index: 10;
+	&__title {
+		color: #fff;
+		margin-bottom: 39px;
+	}
+	&__form {
+		width: 878px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__label {
+		width: calc(50% - 15px);
+		margin-bottom: 67px;
+		&_big {
+			width: 100%;
+		}
+		&-desc {
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: -0.01em;
+			color: #ffffff;
+			opacity: 0.4;
+			margin-top: 26px;
+		}
+	}
+	&__bottom {
+		margin-top: 22px;
+	}
+	&__number {
+		&-item {
+			width: 178px;
+			height: 38px;
+		}
+		&-label {
+			width: 198px;
+			margin-left: 50px;
+			margin-right: 29px;
+		}
+	}
+	&__btn {
+		width: 428px;
+		padding: 26px 31px;
+		border-radius: 3px;
+	}
+	&__img {
+		position: absolute;
+		width: 863px;
+		height: 507px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+	}
+}
+@media (max-width: 1010px) {
+	.order {
+		padding-top: 70px;
+		padding-bottom: 100px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__form {
+			width: 100%;
+		}
+		&__label {
+			margin-bottom: 40px;
+		}
+		&__bottom {
+			margin-top: 10px;
+			flex-wrap: wrap;
+		}
+		&__number {
+			&-label {
+				width: 175px;
+				margin-left: 30px;
+				margin-right: 20px;
+			}
+		}
+		&__btn {
+			width: 317px;
+			padding: 23px 30px;
+		}
+		&__img {
+			width: 650px;
+			height: auto;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.order {
+		padding-top: 35px;
+		padding-bottom: 43px;
+		&__title {
+			margin-bottom: 34px;
+			text-align: center;
+		}
+		&__label {
+			width: 100%;
+			margin-bottom: 9px;
+			&_big {
+				margin-top: 58px;
+			}
+			&-desc {
+				display: none;
+			}
+		}
+		&__bottom {
+			margin-top: 72px;
+			align-items: flex-start;
+		}
+		&__number {
+			align-items: flex-start;
+			&-item {
+				width: 120px;
+				height: 25px;
+				margin-top: 7px;
+			}
+			&-label {
+				width: calc(100% - 142px);
+				margin-left: 0px;
+				margin-right: 0px;
+				.field {
+					padding: 0px 0px 13px;
+				}
+			}
+		}
+		&__btn {
+			width: 100%;
+			padding: 19px 30px;
+			margin-top: 37px;
+		}
+		&__img {
+			display: none;
+		}
+	}
+}
