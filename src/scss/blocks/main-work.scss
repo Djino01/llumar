@@ -3,6 +3,7 @@
 	padding-bottom: 92px;
 	&__row {
 		margin: 0px -15px -27px;
+		overflow: visible;
 		.swiper-wrapper {
 			display: flex;
 			flex-wrap: wrap;
@@ -48,14 +49,6 @@
 		height: 100%;
 		overflow: hidden;
 		border-radius: 3px;
-		&:hover {
-			.main-work__img {
-				img {
-					transform: scale(1.1);
-					transition: all 0.3s;
-				}
-			}
-		}
 	}
 	&__img {
 		width: 100%;

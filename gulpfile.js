@@ -64,6 +64,7 @@ const scriptsLibs = () => {
 	  'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
 	  'node_modules/slick-carousel/slick/slick.js',
 	  'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
+	  'node_modules/vanilla-tilt/dist/vanilla-tilt.min.js',
     ])
     .pipe(concat('libs.js'))
     .pipe(dest('docs/js'))

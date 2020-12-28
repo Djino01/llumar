@@ -36,6 +36,8 @@
     "scroll-lock": "^2.1.4",
     "slick-carousel": "^1.8.1",
     "smooth-scrollbar": "^8.5.3",
-    "swiper": "^6.1.2"
+    "swiper": "^6.1.2",
+    "tilt": "^0.2.0",
+    "vanilla-tilt": "^1.7.0"
   }
 }
